@@ -1,0 +1,612 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Limbic Technologies</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="{% static 'movie/https://fonts.googleapis.com' %}">
+
+    <link rel="preconnect" href="{% static 'movie/https://fonts.gstatic.com' %}" crossorigin>
+
+    <link href="{% static 'movie/https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400 & display=swap' %}" rel="stylesheet">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/tooplate-clean-work.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="{% static 'movie/css/bootstrap.min.css' %}">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="{% static 'movie/css/bootstrap-icons.css' %}">
+    <!-- <link href="css/bootstrap-icons.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="{% static 'movie/css/tooplate-clean-work.css' %}">
+    <!-- <link href="css/tooplate-clean-work.css" rel="stylesheet"> -->
+    <!--
+
+Tooplate 2132 Clean Work
+
+https://www.tooplate.com/view/2132-clean-work
+
+Free Bootstrap 5 HTML Template
+
+-->
+    <style>
+        .banner-section {
+            background-image: url("{% static 'movie/images/six.jpg' %}");
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12 col-12 d-flex flex-wrap">
+                    <p class="d-flex me-4 mb-0">
+                        <i class="bi-house-fill me-2"></i> Development Services
+                    </p>
+
+                    <p class="d-flex d-lg-block d-md-block d-none me-4 mb-0">
+                        <i class="bi-clock-fill me-2"></i>
+                        <strong class="me-2">Mon - Sat</strong> 10:30 AM - 7:00 PM
+                    </p>
+
+                    <p class="site-header-icon-wrap text-white d-flex mb-0 ms-auto">
+                        <i class="site-header-icon bi-whatsapp me-2"></i>
+
+                        <a href="tel: 110-220-9800" class="text-white">
++91-9131015627
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="{% static 'movie/images/download.jpeg' %}" class="logo img-fluid" alt="">
+                <span class="ms-2">Limbic technologies</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index/">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about/">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/gallary/">Portfolio</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                            <li><a class="dropdown-item active" href="/service/">Our Services</a></li>
+
+                            <li><a class="dropdown-item" href="/comming_soon/">Comming Soon</a></li>
+
+                            <li><a class="dropdown-item" href="/page_404/">Page 404</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contect/">Contact</a>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link custom-btn custom-border-btn custom-btn-bg-white btn" href="/index/">Get started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="banner-section d-flex justify-content-center align-items-end">
+            <div class="section-overlay"></div>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-7 col-12">
+                        <h1 class="text-white mb-lg-0">Services Provider</h1>
+                    </div>
+
+                    <div class="col-lg-4 col-12 d-flex justify-content-lg-end align-items-center ms-auto">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="/index/">Home</a></li>
+
+                                <li class="breadcrumb-item active" aria-current="page">Services Provider</li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="services-section section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12">
+                        <div class="services-thumb section-bg mb-lg-0">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-5 col-12">
+                                    <div class="services-image-wrap">
+                                        <a href="/services_details/">
+                                            <img src="{% static 'movie/images/third.jpeg' %}" class="services-image img-fluid" alt="">
+                                            <img src="{% static 'movie/images/third.jpeg' %}" class="services-image services-image-hover img-fluid" alt="">
+                                            <div class="services-icon-wrap">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <p class="text-white mb-0">
+                                                        <i class="bi-cash me-2"></i> Rs.820
+                                                    </p>
+
+                                                    <p class="text-white mb-0">
+                                                        <i class="bi-clock-fill me-2"></i> 8 hrs
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                    <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                        <h4 class="services-title mb-1 mb-lg-2">
+                                            <a class="services-title-link" href="/services_details/">Web Development</a>
+                                        </h4>
+
+                                        <p>The goal of web development is to create websites that are visually appealing, user-friendly, and provide a great user experience.</p>
+
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <div class="reviews-icons">
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star"></i>
+                                                <i class="bi-star"></i>
+                                            </div>
+
+                                            <a href="#" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                <span>Learn More</span>
+
+                                                <div class="marquee" aria-hidden="true">
+                                                    <div class="marquee__inner">
+                                                        <span>Learn More</span>
+                                                        <span>Learn More</span>
+                                                        <span>Learn More</span>
+                                                        <span>Learn More</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="services-thumb section-bg mb-lg-0">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-5 col-12">
+                                    <div class="services-image-wrap">
+                                        <a href="/services_details/">
+                                            <img src="{% static 'movie/images/five.webp' %}" class="services-image img-fluid" alt="">
+                                            <img src="{% static 'movie/images/five.webp' %}" class="services-image services-image-hover img-fluid" alt="">
+                                            <div class="services-icon-wrap">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <p class="text-white mb-0">
+                                                        <i class="bi-cash me-2"></i> Rs.640
+                                                    </p>
+
+                                                    <p class="text-white mb-0">
+                                                        <i class="bi-clock-fill me-2"></i> 24 hrs
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+<!-- <section class="services-section section-padding section-bg">
+            <div class="container">
+                <div class="row"> -->
+                                <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                    <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                        <h4 class="services-title mb-1 mb-lg-2">
+                                            <a class="services-title-link" href="/services_details/">Application Development</a>
+                                        </h4>
+
+                                        <p>The application development process typically involves several stages, including ideation, design, development, testing, and deployment. </p>
+
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <div class="reviews-icons">
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                            </div>
+
+                                            <a href="#" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                <span>Learn More</span>
+
+                                                <div class="marquee" aria-hidden="true">
+                                                    <div class="marquee__inner">
+                                                        <span>Learn More</span>
+                                                        <span>Learn More</span>
+                                                        <span>Learn More</span>
+                                                        <span>Learn More</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+       
+
+
+        <section class="services-section section-padding section-bg">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12">
+                        <div class="services-thumb mb-lg-0">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-5 col-12">
+                                    <div class="services-image-wrap">
+                                        <a href="/services_details/">
+                                            <img src="{% static 'movie/images/second.webp' %}" class="services-image img-fluid" alt="">
+                                            <img src="{% static 'movie/images/second.webp' %}" class="services-image services-image-hover img-fluid" alt="">
+                                            <div class="services-icon-wrap">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <p class="text-white mb-0">
+                                                        <i class="bi-cash me-2"></i> Rs.240
+                                                    </p>
+
+                                                    <p class="text-white mb-0">
+                                                        <i class="bi-clock-fill me-2"></i> 24 hrs
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                    <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                        <h4 class="services-title mb-1 mb-lg-2">
+                                            <a class="services-title-link" href="/services_details/">Leadership</a>
+                                        </h4>
+
+                                        <p>Leadership refers to the ability to guide, motivate, and inspire individuals or groups towards achieving a common goal.  </p>
+
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <div class="reviews-icons">
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                            </div>
+
+                                            <a href="#" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                <span>Learn More</span>
+
+                                                <div class="marquee" aria-hidden="true">
+                                                    <div class="marquee__inner">
+                                                        <span>Learn More</span>
+                                                        <span>Learn More</span>
+                                                        <span>Learn More</span>
+                                                        <span>Learn More</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="services-thumb mb-lg-0">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-5 col-12">
+                                    <div class="services-image-wrap">
+                                        <a href="/services_details/">
+                                            <img src="{% static 'movie/images/fourth.jpeg' %}" class="services-image img-fluid" alt="">
+                                            <img src="{% static 'movie/images/fourth.jpeg' %}" class="services-image services-image-hover img-fluid" alt="">
+
+                                            <div class="services-icon-wrap">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <p class="text-white mb-0">
+                                                        <i class="bi-cash me-2"></i> Rs.6,800
+                                                    </p>
+
+                                                    <p class="text-white mb-0">
+                                                        <i class="bi-clock-fill me-2"></i> 24 hrs
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center">
+                                    <div class="services-info mt-4 mt-lg-0 mt-md-0">
+                                        <h4 class="services-title mb-1 mb-lg-2">
+                                            <a class="services-title-link" href="/services_details/">Web Application</a>
+                                        </h4>
+
+                                        <p>A web application is a software application that runs on a web server and is accessed through a web browser. </p>
+
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <div class="reviews-icons">
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star"></i>
+                                            </div>
+
+                                            <a href="#" class="custom-btn btn button button--atlas mt-2 ms-auto">
+                                                <span>Learn More</span>
+
+                                                <div class="marquee" aria-hidden="true">
+                                                    <div class="marquee__inner">
+                                                        <span>Learn More</span>
+                                                        <span>Learn More</span>
+                                                        <span>Learn More</span>
+                                                        <span>Learn More</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- <strong class="d-block text-white mb-1">Sun</strong>
+
+        <p class="text-white mb-0">Closed...</p>
+ -->
+
+        <!-- <section class="partners-section">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+
+                    <div class="col-lg-12 col-12">
+                        <h4 class="partners-section-title bg-white shadow-lg">Trusted by companies</h4>
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="{% static 'movie/images/partners/toprak-leasing.svg' %}" class="partners-image img-fluid">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="{% static 'movie/images/partners/glorix.svg' %}" class="partners-image img-fluid">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="{% static 'movie/images/partners/woocommerce.svg' %}" class="partners-image img-fluid">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="{% static 'movie/images/partners/rolf-leasing.svg' %}" class="partners-image img-fluid">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <img src="{% static 'movie/images/partners/unilabs.svg' %}" class="partners-image img-fluid">
+                    </div>
+
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12 col-12 d-flex align-items-center mb-4 pb-2">
+                    <div>
+                        <img src="{% static 'movie/images/download.jpeg' %}" class="logo img-fluid" alt="">
+                    </div>
+
+                    <ul class="footer-menu d-flex flex-wrap ms-5">
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">About Us</a></li>
+
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Blog</a></li>
+
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Reviews</a></li>
+
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-5 col-12 mb-4 mb-lg-0">
+                    <h5 class="site-footer-title mb-3">Our Services</h5>
+
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item">
+                            <a href="#" class="footer-menu-link">
+                                <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i> Web Development
+                            </a>
+                        </li>
+
+                        <li class="footer-menu-item">
+                            <a href="#" class="footer-menu-link">
+                                <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>Leadership
+                            </a>
+                        </li>
+
+                        <li class="footer-menu-item">
+                            <a href="#" class="footer-menu-link">
+                                <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>Web Application
+                            </a>
+                        </li>
+
+                        <li class="footer-menu-item">
+                            <a href="#" class="footer-menu-link">
+                                <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>Application Development
+                            </a>
+                        </li>
+
+                        <li class="footer-menu-item">
+                            <a href="#" class="footer-menu-link">
+                                <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>Training/Internship
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
+                    <h5 class="site-footer-title mb-3">Office</h5>
+
+                    <p class="text-white d-flex mt-3 mb-2">
+                        <i class="bi-geo-alt-fill me-2"></i>EMS House,KI,block 10,Zone-1,Maharana Pratap Nagar,Bhopal,Madhya Pradesh 462023
+                    </p>
+
+                    <p class="text-white d-flex mb-2">
+                        <i class="bi-telephone-fill me-2"></i>
+
+                        <a href="tel: 110-220-9800" class="site-footer-link">
+                            +91 9131015627
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <i class="bi-envelope-fill me-2"></i>
+
+                        <a href="mailto:info@company.com" class="site-footer-link">
+limbictechnologies@gmail.com
+                        </a>
+                    </p>
+
+                    <ul class="social-icon mt-4">
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link button button--skoll">
+                                <span></span>
+                                <span class="bi-twitter"></span>
+                            </a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link button button--skoll">
+                                <span></span>
+                                <span class="bi-facebook"></span>
+                            </a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link button button--skoll">
+                                <span></span>
+                                <span class="bi-instagram"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-6 mt-3 mt-lg-0 mt-md-0">
+                    <div class="featured-block">
+                        <h5 class="text-white mb-3">Service Hours</h5>
+
+                        <strong class="d-block text-white mb-1">Mon - Sat</strong>
+
+                        <p class="text-white mb-3">10:30 AM - 7:00 PM</p>
+
+                        <strong class="d-block text-white mb-1">Sun - Closed</strong>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 ">
+                        <p class="copyright-text mb-0 ">© Copyright Limbic Technology. All Rights Reserved<br> <span style="color:blue">Designed by Limbictechnologies</span></p>
+                        
+                    </div>
+
+                    <div class="col-lg-6 col-12 text-end ">
+                        <p class="copyright-text mb-0 ">
+                            // Designed by <a href="https://www.tooplate.com " target="_parent ">limbictechnologies</a> //</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <!-- <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
+    <!-- <script src="js/jquery.backstretch.min.js"></script> -->
+    <script src="{% static 'movie/js/jquery.backstretch.min.js ' %}"></script>
+    <!-- <script src="js/counter.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/animated-headline.js"></script>movie/
+    <script src="js/custom.js"></script> -->
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="{% static 'movie/js/jquery.min.js ' %}"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="{% static 'movie/js/bootstrap.min.js ' %}"></script>
+    <!-- <script src="js/jquery.backstretch.min.js"></script> -->
+    <script src="{% static 'movie/js/counter.js ' %}"></script>
+    <!-- <script src="js/counter.js"></script> -->
+    <script src="{% static 'movie/js/countdown.js ' %}"></script>
+    <!-- <script src="js/countdown.js"></script> -->
+    <script src="{% static 'movie/js/init.js ' %}"></script>
+    <!-- <script src="js/init.js"></script> -->
+    <script src="{% static 'movie/js/modernizr.js ' %}"></script>
+    <!-- <script src="js/modernizr.js"></script> -->
+    <script src="{% static 'movie/js/animated-headline.js ' %}"></script>
+    <!-- <script src="js/animated-headline.js"></script> -->
+    <!-- <script src="js/custom.js"></script> -->
+    <script src="{% static 'movie/js/custom.js ' %}"></script>
+
+</body>
+
+</html>
