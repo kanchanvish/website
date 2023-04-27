@@ -634,7 +634,7 @@ strong {
 .navbar-brand,
 .navbar-brand:hover {
     color: var(--white-color);
-    font-size: var(--h6-font-size);
+    font-size: var(--h5-font-size);
     font-weight: var(--font-weight-light);
 }
 
@@ -664,7 +664,7 @@ strong {
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
     background: transparent;
-    color: var(--primary-color);
+    color: yellow;
 }
 
 .dropdown-menu {
@@ -885,7 +885,6 @@ strong {
 -----------------------------------------*/
 
 .banner-section {
-
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1024,7 +1023,10 @@ strong {
     position: relative;
     overflow: hidden;
     margin-bottom: 24px;
-    padding: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .services-thumb.section-bg {
@@ -1624,3 +1626,12 @@ strong {
         font-size: 20px;
     }
 }
+
+#navbarNav ul li a {}
+
+
+/* .ms-2 {
+    font-size: 30px;
+    margin-left: 8px;
+    padding-left: 4px;
+} */

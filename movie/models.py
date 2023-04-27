@@ -14,3 +14,14 @@ class Customer(models.Model):
     ]
     service_type = models.CharField(max_length=20, choices=SERVICE_TYPE_CHOICES)
     description = models.TextField(blank=True, null=True)
+
+class Carrers(models.Model):
+    job_title = models.CharField(max_length=100)
+    Company = models.CharField(max_length=100)
+    Location = models.CharField(max_length=100)
+    job_type = models.CharField(max_length=100)
+    Job_Description = models.CharField(max_length=400)
+    Responsibilities = models.CharField(max_length=400)
+    Requirements = models.CharField(max_length=400)  
+    image_path = models.CharField(max_length=100)
+

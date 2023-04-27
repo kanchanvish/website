@@ -45,14 +45,16 @@ Free Bootstrap 5 HTML Template
         .banner-section {
             background-image: url("{% static 'movie/images/six.jpg' %}");
         }
-        .image{
+        
+        .image {
             width: 400px;
             height: 300px;
         }
-        .services-image-wrap{
-        width: 600px;
+        
+        .services-image-wrap {
+            width: 600px;
             height: 400px;
-    }
+        }
     </style>
 </head>
 
@@ -84,7 +86,8 @@ Free Bootstrap 5 HTML Template
 
             </div>
         </div>
-    </header> --><header class="site-header">
+    </header> -->
+    <header class="site-header">
         <div class="container">
             <div class="row">
 
@@ -115,7 +118,7 @@ Free Bootstrap 5 HTML Template
         <div class="container">
             <a class="navbar-brand" href="/index/">
                 <img src="{% static 'movie/images/download.jpeg' %}" class="logo img-fluid" alt="">
-                <span class="ms-2">Limbic technologies</span>
+                <span class="ms-2">Limbic Technologies</span>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -135,20 +138,23 @@ Free Bootstrap 5 HTML Template
                         <a class="nav-link" href="/gallary/">Portfolio</a>
                     </li>
 
-                    <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="/#section_5/" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
 
-                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                            <li><a class="dropdown-item" href="/service/">Our Services</a></li>
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink"> -->
+                    <li class="nav-item"><a class="nav-link" style="color: white;" href="/service/">Our Services</a></li>
 
-                            <li><a class="dropdown-item" href="/comming_soon/">Coming Soon</a></li>
+                    <!-- <li><a class="dropdown-item" href="/comming_soon/">Coming Soon</a></li>
 
                             <li><a class="dropdown-item" href="/page_404/">Page 404</a></li>
                         </ul>
-                    </li>
+                    </li> -->
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/contect/">Contact</a>
+                        <a class="nav-link" style="color: white;" href="/contact/">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="/carrier/">Career</a>
                     </li>
 
                     <li class="nav-item ms-3">
@@ -186,7 +192,7 @@ Free Bootstrap 5 HTML Template
         </section>
 
 
-         <section class="services-detail-section section-padding">
+        <section class="services-detail-section section-padding">
             <div class="container">
                 <div class="row">
 
@@ -194,7 +200,7 @@ Free Bootstrap 5 HTML Template
                         <div class="services-image-wrap">
                             <img src="{% static 'movie/images/portfolio.jpg' %}" width="800px" height="600px" class="services-image img-fluid " alt=" ">
                             <img src="{% static 'movie/images/th.jpg' %}" width="800px" height="600px" class="services-image services-image-hover img-fluid " alt=" ">
-                            <div class="services-icon-wrap ">
+                            <!-- <div class="services-icon-wrap ">
                                 <div class="d-flex justify-content-between align-items-center ">
                                     <p class="text-white mb-0 ">
                                         <i class="bi-cash me-2 "></i> $820
@@ -204,7 +210,7 @@ Free Bootstrap 5 HTML Template
                                         <i class="bi-clock-fill me-2 "></i> 5 hrs
                                     </p>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
@@ -214,19 +220,20 @@ Free Bootstrap 5 HTML Template
 
                             <p>Please tell your friends about Tooplate's <a href="# ">free HTML templates</a>. Thank you for choosing our templates for your work.</p>
 
-                            <h6 class="mt-4 ">Affordable Service</h6>
+                            <h6 class="mt-4 ">Software Services</h6>
 
-                            <p>Clean Work is free Bootstrap v.5.1.3 HTML CSS template provided by Tooplate. You can use this layout for a commercial purpose.</p>
+                            <p> HTML CSS template provided by Tooplate. You can use this layout for a commercial purpose.</p>
 
                             <h6>Expert Team</h6>
 
-                            <p>You are not allowed to redistribute this clean work HTML template's <a href="# ">downloadable ZIP file</a> on any other template website. Please contact us for more info. Thank you.</p>
+                            <p>Common front-end technologies include HTML, CSS, and JavaScript, while back-end technologies can include programming languages like PHP, Python, Ruby, or Node.js, and databases like MySQL, MongoDB, or PostgreSQL.
+                                <a href="# "></a> on any other template website. Please contact us for more info. Thank you.</p>
                         </div>
                     </div>
 
                 </div>
             </div>
-        </section> 
+        </section>
 
 
         <section class="section-padding pt-0 ">
@@ -239,31 +246,31 @@ Free Bootstrap 5 HTML Template
 
                     <div class="col-lg-4 col-md-4 col-12 ">
                         <a href="{% static 'movie/images/our.png' %} " class="image-popup ">
-                            <img src="{%static 'movie/images/1.png'%}"  width="1000%" height="950px" class="gallery-image image ">
-                          <center> <a href="/index/"><b><h5 style="color: black;"> OurTestSeries</h5></b></a></center>
+                            <img src="{%static 'movie/images/1.png'%}" width="1000%" height="950px" class="gallery-image image ">
+                            <center> <a href="/index/"><b><h5 style="color: black;"> OurTestSeries</h5></b></a></center>
                         </a>
                     </div>
-                    
+
 
                     <div class="col-lg-4 col-md-4 col-12 ">
-                      <a href="{% static 'movie/images/online.png' %}" class="image-popup " >
-                    
-                        <img src="{%static 'movie/images/2.jpg'%}" width="700px" height="900px" class="gallery-image image ">
-                        <center> <a href="/index/"><b><h5 style="color: black;"> Online Exam</h5></b></a></center>
+                        <a href="{% static 'movie/images/online.png' %}" class="image-popup ">
+
+                            <img src="{%static 'movie/images/2.jpg'%}" width="700px" height="900px" class="gallery-image image ">
+                            <center> <a href="/index/"><b><h5 style="color: black;"> Online Exam</h5></b></a></center>
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-4 col-12 ">
-                        <a href="{% static 'movie/images/school.png' %}" class="image-popup " >
-                      
-                          <img src="{%static 'movie/images/4.jpg'%}" width="700px" height="1000px" class="gallery-image image ">
-                          <center> <a href="/index/"><b><h5 style="color: black;"> School</h5></b></a></center>
-                          </a>
-                      </div>
+                        <a href="{% static 'movie/images/school.png' %}" class="image-popup ">
+
+                            <img src="{%static 'movie/images/4.jpg'%}" width="700px" height="1000px" class="gallery-image image ">
+                            <center> <a href="/index/"><b><h5 style="color: black;"> School</h5></b></a></center>
+                        </a>
+                    </div>
 
                 </div>
             </div>
-        </section> 
-        
+        </section>
+
         <section class="section-padding pt-0 ">
             <div class="container ">
                 <div class="row ">
@@ -273,38 +280,38 @@ Free Bootstrap 5 HTML Template
                     </div> -->
 
                     <div class="col-lg-4 col-md-4 col-12 ">
-                        <a href="{% static 'movie/images/social.png' %}"class="image-popup ">
+                        <a href="{% static 'movie/images/social.png' %}" class="image-popup ">
                             <!-- <img src="{%static 'movie/images/two.png'%}"> -->
-                            <img src="{%static 'movie/images/Logo.png'%}"  width="1000%" height="950px" class="gallery-image image ">
-                            
+                            <img src="{%static 'movie/images/Logo.png'%}" width="1000%" height="950px" class="gallery-image image ">
 
 
-                          <center> <a href="/index/"><b><h5 style="color: black;"> SocialLodder</h5></b></a></center>
+
+                            <center> <a href="/index/"><b><h5 style="color: black;"> SocialLodder</h5></b></a></center>
                         </a>
                     </div>
-                    
+
 
                     <div class="col-lg-4 col-md-4 col-12 ">
-                      <a href="{% static 'movie/images/bat.png' %}" class="image-popup " >
-                    
-                       
-                        <img src="{%static 'movie/images/3 (1).jpg' %}" width="700px" height="900px" class="gallery-image image ">
-                        <center> <a href="/index/"><b><h5 style="color: black;"> Bot</h5></b></a></center>
+                        <a href="{% static 'movie/images/bat.png' %}" class="image-popup ">
+
+
+                            <img src="{%static 'movie/images/3 (1).jpg' %}" width="700px" height="900px" class="gallery-image image ">
+                            <center> <a href="/index/"><b><h5 style="color: black;"> Bot</h5></b></a></center>
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-4 col-12 ">
-                        <a href="{% static 'movie/images/buk.png' %}" class="image-popup " >
-                      
-                          <img src="{%static 'movie/images/th (1).jpg'%}" width="700px" height="1000px" class="gallery-image image ">
-                          <center> <a href="/index/"><b><h5 style="color: black;"> Bucksbin</h5></b></a></center>
-                          </a>
-                      </div>
+                        <a href="{% static 'movie/images/buk.png' %}" class="image-popup ">
+
+                            <img src="{%static 'movie/images/th (1).jpg'%}" width="700px" height="1000px" class="gallery-image image ">
+                            <center> <a href="/index/"><b><h5 style="color: black;"> Bucksbin</h5></b></a></center>
+                        </a>
+                    </div>
 
                 </div>
             </div>
-        </section> 
-        
-<!-- 
+        </section>
+
+        <!-- 
         <section class="section-padding section-bg ">
             <div class="container ">
                 <div class="row ">
@@ -442,8 +449,8 @@ Free Bootstrap 5 HTML Template
                     <div class="col-lg-12 col-12 ">
                             <h2 class="mb-4 ">Related Services</h2>
                         </div> -->
-    
-                        <!-- <div class="col-lg-6 col-12 ">
+
+        <!-- <div class="col-lg-6 col-12 ">
                             <div class="services-thumb mb-lg-0 ">
                                 <div class="row ">
                                     <div class="col-lg-5 col-md-5 col-12 ">
@@ -600,185 +607,185 @@ Free Bootstrap 5 HTML Template
                 </div>
             </div>
         </section> 
-    </main>  --> 
-    <footer class="site-footer ">
-        <div class="container ">
-            <div class="row ">
-
-                <div class="col-lg-12 col-12 d-flex align-items-center mb-4 pb-2 ">
-                    <div>
-                        <img src="{%static 'movie/images/download.jpeg' %} " class="logo img-fluid " alt=" ">
-                    </div>
-
-                    <ul class="footer-menu d-flex flex-wrap ms-5 ">
-                        <li class="footer-menu-item "><a href="# " class="footer-menu-link ">About Us</a></li>
-
-                        <li class="footer-menu-item "><a href="# " class="footer-menu-link ">Blog</a></li>
-
-                        <li class="footer-menu-item "><a href="# " class="footer-menu-link ">Reviews</a></li>
-
-                        <li class="footer-menu-item "><a href="# " class="footer-menu-link ">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-5 col-12 mb-4 mb-lg-0 ">
-                    <h5 class="site-footer-title mb-3 ">Our Services</h5>
-
-                    <ul class="footer-menu ">
-                        <li class="footer-menu-item ">
-                            <a href="# " class="footer-menu-link ">
-                                <i class="bi-chevron-double-right footer-menu-link-icon me-2 "></i> Web Development
-                            </a>
-                        </li>
-
-                        <li class="footer-menu-item ">
-                            <a href="# " class="footer-menu-link ">
-                                <i class="bi-chevron-double-right footer-menu-link-icon me-2 "></i> Leadership
-                            </a>
-                        </li>
-
-                        <li class="footer-menu-item ">
-                            <a href="# " class="footer-menu-link ">
-                                <i class="bi-chevron-double-right footer-menu-link-icon me-2 "></i> Web Application
-                            </a>
-                            </a>
-                        </li>
-
-                        <li class="footer-menu-item ">
-                            <a href="# " class="footer-menu-link ">
-                                <i class="bi-chevron-double-right footer-menu-link-icon me-2 "></i> Application Development
-                            </a>
-                        </li>
-
-                        <li class="footer-menu-item ">
-                            <a href="# " class="footer-menu-link ">
-                                <i class="bi-chevron-double-right footer-menu-link-icon me-2 "></i> Training/Internship
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0 ">
-                    <h5 class="site-footer-title mb-3 ">Office</h5>
-
-                    <p class="text-white d-flex mt-3 mb-2 ">
-                        <i class="bi-geo-alt-fill me-2 "></i>EMS House,KI,block 10,Zone-1,Maharana Pratap Nagar,Bhopal,Madhya Pradesh 462023
-                    </p>
-
-                    <p class="text-white d-flex mb-2 ">
-                        <i class="bi-telephone-fill me-2 "></i>
-
-                        <a href="tel: 110-220-9800 " class="site-footer-link ">
-                            +91-9131015627
-                            </a>
-                    </p>
-
-                    <p class="text-white d-flex ">
-                        <i class="bi-envelope-fill me-2 "></i>
-
-                        <a href="mailto:info@company.com " class="site-footer-link ">
-                            limbictechnologies@gmail.com
-                            </a>
-                    </p>
-
-                    <ul class="social-icon mt-4 ">
-                        <li class="social-icon-item ">
-                            <a href="# " class="social-icon-link button button--skoll ">
-                                <span></span>
-                                <span class="bi-twitter "></span>
-                            </a>
-                        </li>
-
-                        <li class="social-icon-item ">
-                            <a href="# " class="social-icon-link button button--skoll ">
-                                <span></span>
-                                <span class="bi-facebook "></span>
-                            </a>
-                        </li>
-
-                        <li class="social-icon-item ">
-                            <a href="# " class="social-icon-link button button--skoll ">
-                                <span></span>
-                                <span class="bi-instagram "></span>
-                            </a>
-                        </li>
-
-                        <li class="social-icon-item ">
-                            <a href="# " class="social-icon-link button button--skoll ">
-                                <span></span>
-                                <span class="bi-linkedin "></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 col-6 mt-3 mt-lg-0 mt-md-0 ">
-                    <div class="featured-block ">
-                        <h5 class="text-white mb-3 ">Service Hours</h5>
-
-                        <strong class="d-block text-white mb-1 ">Mon - Sat</strong>
-
-                        <p class="text-white mb-3 ">10:30 AM - 7:00 PM</p>
-
-                        <strong class="d-block text-white mb-1 ">Sun- Closed</strong>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="site-footer-bottom ">
+    </main>  -->
+        <footer class="site-footer ">
             <div class="container ">
                 <div class="row ">
 
-                    <div class="col-lg-6 col-12 ">
-                        <p class="copyright-text mb-0 ">© Copyright Limbic Technology. All Rights Reserved<br> <span style="color:blue">Designed by Limbictechnologies</span></p>
-                        
+                    <div class="col-lg-12 col-12 d-flex align-items-center mb-4 pb-2 ">
+                        <div>
+                            <img src="{%static 'movie/images/download.jpeg' %} " class="logo img-fluid " alt=" ">
+                        </div>
+
+                        <ul class="footer-menu d-flex flex-wrap ms-5 ">
+                            <li class="footer-menu-item "><a href="# " class="footer-menu-link ">About Us</a></li>
+
+                            <li class="footer-menu-item "><a href="# " class="footer-menu-link ">Blog</a></li>
+
+                            <li class="footer-menu-item "><a href="# " class="footer-menu-link ">Reviews</a></li>
+
+                            <li class="footer-menu-item "><a href="# " class="footer-menu-link ">Contact</a></li>
+                        </ul>
                     </div>
 
-                    <div class="col-lg-6 col-12 text-end ">
-                        <p class="copyright-text mb-0 ">
-                            // Designed by <a href="https://www.tooplate.com " target="_parent ">limbictechnologies</a> //</p>
+                    <div class="col-lg-5 col-12 mb-4 mb-lg-0 ">
+                        <h5 class="site-footer-title mb-3 ">Our Services</h5>
+
+                        <ul class="footer-menu ">
+                            <li class="footer-menu-item ">
+                                <a href="# " class="footer-menu-link ">
+                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2 "></i> Web Development
+                                </a>
+                            </li>
+
+                            <li class="footer-menu-item ">
+                                <a href="# " class="footer-menu-link ">
+                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2 "></i> Leadership
+                                </a>
+                            </li>
+
+                            <li class="footer-menu-item ">
+                                <a href="# " class="footer-menu-link ">
+                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2 "></i> Web Application
+                                </a>
+                                </a>
+                            </li>
+
+                            <li class="footer-menu-item ">
+                                <a href="# " class="footer-menu-link ">
+                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2 "></i> Application Development
+                                </a>
+                            </li>
+
+                            <li class="footer-menu-item ">
+                                <a href="# " class="footer-menu-link ">
+                                    <i class="bi-chevron-double-right footer-menu-link-icon me-2 "></i> Training/Internship
+                                </a>
+                            </li>
+                        </ul>
                     </div>
 
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0 ">
+                        <h5 class="site-footer-title mb-3 ">Office</h5>
+
+                        <p class="text-white d-flex mt-3 mb-2 ">
+                            <i class="bi-geo-alt-fill me-2 "></i>EMS House,KI,block 10,Zone-1,Maharana Pratap Nagar,Bhopal,Madhya Pradesh 462023
+                        </p>
+
+                        <p class="text-white d-flex mb-2 ">
+                            <i class="bi-telephone-fill me-2 "></i>
+
+                            <a href="tel: 110-220-9800 " class="site-footer-link ">
+                            +91-9131015627
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex ">
+                            <i class="bi-envelope-fill me-2 "></i>
+
+                            <a href="mailto:info@company.com " class="site-footer-link ">
+                            limbictechnologies@gmail.com
+                            </a>
+                        </p>
+
+                        <ul class="social-icon mt-4 ">
+                            <li class="social-icon-item ">
+                                <a href="# " class="social-icon-link button button--skoll ">
+                                    <span></span>
+                                    <span class="bi-twitter "></span>
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item ">
+                                <a href="# " class="social-icon-link button button--skoll ">
+                                    <span></span>
+                                    <span class="bi-facebook "></span>
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item ">
+                                <a href="# " class="social-icon-link button button--skoll ">
+                                    <span></span>
+                                    <span class="bi-instagram "></span>
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item ">
+                                <a href="# " class="social-icon-link button button--skoll ">
+                                    <span></span>
+                                    <span class="bi-linkedin "></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6 mt-3 mt-lg-0 mt-md-0 ">
+                        <div class="featured-block ">
+                            <h5 class="text-white mb-3 ">Service Hours</h5>
+
+                            <strong class="d-block text-white mb-1 ">Mon - Sat</strong>
+
+                            <p class="text-white mb-3 ">10:30 AM - 7:00 PM</p>
+
+                            <strong class="d-block text-white mb-1 ">Sun- Closed</strong>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+
+            <div class="site-footer-bottom ">
+                <div class="container ">
+                    <div class="row ">
+
+                        <div class="col-lg-6 col-12 ">
+                            <p class="copyright-text mb-0 ">Limbic Technology. All Rights Reserved<br> <span style="color:blue">Designed by Limbictechnologies</span></p>
+
+                        </div>
+
+                        <div class="col-lg-6 col-12 text-end ">
+                            <p class="copyright-text mb-0 ">
+                                // Designed by <a href="https://www.tooplate.com " target="_parent ">limbictechnologies</a> //</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
 
 
-    <!-- JAVASCRIPT FILES -->
-    <!-- <script src="js/jquery.min.js "></script>
+        <!-- JAVASCRIPT FILES -->
+        <!-- <script src="js/jquery.min.js "></script>
     <script src="js/bootstrap.min.js "></script> -->
-    <!-- <script src="js/jquery.backstretch.min.js "></script> -->
-    <script src="{% static 'movie/js/jquery.backstretch.min.js' %} "></script>
-    <!-- <script src="js/counter.js "></script>
+        <!-- <script src="js/jquery.backstretch.min.js "></script> -->
+        <script src="{% static 'movie/js/jquery.backstretch.min.js' %} "></script>
+        <!-- <script src="js/counter.js "></script>
     <script src="js/countdown.js "></script>
     <script src="js/init.js "></script>
     <script src="js/modernizr.js "></script>
     <script src="js/animated-headline.js "></script> -->
-    <!-- <script src="js/jquery.magnific-popup.min.js "></script> -->
-    <script src="{% static 'movie/js/jquery.magnific-popup.min.js' %} "></script>
-    <script src="{% static 'movie/js/magnific-popup-options.js' %} "></script>
-    <!-- <script src="js/magnific-popup-options.js "></script> -->
-    <!-- <script src="js/custom.js "></script> -->
-    <!-- <script src="js/jquery.min.js "></script> -->
-    <script src="{% static 'movie/js/jquery.min.js' %} "></script>
-    <!-- <script src="js/bootstrap.min.js "></script> -->
-    <script src="{% static 'movie/js/bootstrap.min.js' %} "></script>
-    <!-- <script src="js/jquery.backstretch.min.js "></script> -->
-    <script src="{% static 'movie/js/counter.js' %} "></script>
-    <!-- <script src="js/counter.js "></script> -->
-    <script src="{% static 'movie/js/countdown.js' %} "></script>movie/
-    <!-- <script src="js/countdown.js "></script> -->
-    <script src="{% static 'movie/js/init.js' %} "></script>
-    <!-- <script src="js/init.js "></script> -->
-    <script src="{% static 'movie/js/modernizr.js' %} "></script>
-    <!-- <script src="js/modernizr.js "></script> -->
-    <script src="{% static 'movie/js/animated-headline.js' %} "></script>
-    <!-- <script src="js/animated-headline.js "></script> -->
-    <!-- <script src="js/custom.js "></script> -->
-    <script src="{% static 'js/custom.js' %} "></script>
+        <!-- <script src="js/jquery.magnific-popup.min.js "></script> -->
+        <script src="{% static 'movie/js/jquery.magnific-popup.min.js' %} "></script>
+        <script src="{% static 'movie/js/magnific-popup-options.js' %} "></script>
+        <!-- <script src="js/magnific-popup-options.js "></script> -->
+        <!-- <script src="js/custom.js "></script> -->
+        <!-- <script src="js/jquery.min.js "></script> -->
+        <script src="{% static 'movie/js/jquery.min.js' %} "></script>
+        <!-- <script src="js/bootstrap.min.js "></script> -->
+        <script src="{% static 'movie/js/bootstrap.min.js' %} "></script>
+        <!-- <script src="js/jquery.backstretch.min.js "></script> -->
+        <script src="{% static 'movie/js/counter.js' %} "></script>
+        <!-- <script src="js/counter.js "></script> -->
+        <script src="{% static 'movie/js/countdown.js' %} "></script>
+        <!-- <script src="js/countdown.js "></script> -->
+        <script src="{% static 'movie/js/init.js' %} "></script>
+        <!-- <script src="js/init.js "></script> -->
+        <script src="{% static 'movie/js/modernizr.js' %} "></script>
+        <!-- <script src="js/modernizr.js "></script> -->
+        <script src="{% static 'movie/js/animated-headline.js' %} "></script>
+        <!-- <script src="js/animated-headline.js "></script> -->
+        <!-- <script src="js/custom.js "></script> -->
+        <script src="{% static 'js/custom.js' %} "></script>
 </body>
 
 </html>

@@ -42,6 +42,17 @@ Free Bootstrap 5 HTML Template
         .banner-section {
             background-image: url("{% static 'movie/images/six.jpg' %}");
         }
+        /* #navbarNav ul li a {
+            font-size: 22px;
+        }
+        
+        .brand {
+            font-size: 25px;
+        } */
+        
+        a.nav-link {
+            color: yellow;
+        }
     </style>
 </head>
 
@@ -78,7 +89,7 @@ Free Bootstrap 5 HTML Template
         <div class="container">
             <a class="navbar-brand" href="/index/">
                 <img src="{% static 'movie/images/download.jpeg' %}" class="logo img-fluid" alt="">
-                <span class="ms-2">Limbic technologies</span>
+                <span class="ms-2 brand">Limbic technologies</span>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,32 +97,35 @@ Free Bootstrap 5 HTML Template
                 </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/index/">Home</a>
+                <ul class="navbar-nav ms-auto" style="color: white;">
+                    <li class="nav-item" style="color: white;">
+                        <a class="nav-link" style="color: white;" href="/index/">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="/about/">About Us</a>
+                        <a class="nav-link " style="color: white;" href="/about/">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/gallary/">Portfolio</a>
+                        <a class="nav-link" style="color:white" href="/gallary/">Portfolio</a>
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="/contect/" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/contect/" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a> -->
 
-                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                            <li><a class="dropdown-item" href="/service/">Our Services</a></li>
+                    <!-- <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink"> -->
+                    <li class="nav-item"><a class="nav-link" style="color: white;" href="/service/">Our Services</a></li>
 
-                            <li><a class="dropdown-item" href="/comming_soon/">Coming Soon</a></li>
+                    <!-- <li><a class="dropdown-item" href="/comming_soon/">Coming Soon</a></li>
 
-                            <li><a class="dropdown-item" href="/page_404/">Page 404</a></li>
-                        </ul>
+                    <li><a class="dropdown-item" href="/page_404/">Page 404</a></li>
+                </ul> -->
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/contect/">Contact</a>
+                        <a class="nav-link" style="color: white;" href="/contact/">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="/carrier/">Career</a>
                     </li>
 
                     <li class=" nav-item ms-3 ">
@@ -165,7 +179,7 @@ Free Bootstrap 5 HTML Template
 
                             <p>development work is a blue color theme HTML CSS template for your company website. You may use this template for any purpose.</p>
 
-                            <a class="custom-btn btn button button--atlas mt-3 " href="/comming_soon/">
+                            <a class="custom-btn btn button button--atlas mt-3 " href="/gallary/">
                                 <span>Get in touch</span>
 
                                 <div class="marquee " aria-hidden="true ">
@@ -208,7 +222,7 @@ Free Bootstrap 5 HTML Template
                                     <i class="bi-whatsapp me-2 "></i>
 
                                     <a href="tel: 110-220-9800 ">
-                                        +91-6778899909
+                                        +91-8878457778
                                     </a>
                                 </p>
                             </div>
@@ -230,7 +244,7 @@ Free Bootstrap 5 HTML Template
                                     <i class="bi-whatsapp me-2 "></i>
 
                                     <a href="tel: 110-220-9800 ">
-                                        +91-9131015887
+                                        +91-8987193277
                                     </a>
                                 </p>
                             </div>
@@ -404,7 +418,7 @@ Free Bootstrap 5 HTML Template
                 <div class="row ">
 
                     <div class="col-lg-6 col-12 ">
-                        <p class="copyright-text mb-0 ">© Copyright Limbic Technology. All Rights Reserved<br> <span style="color:blue">Designed by Limbictechnologies</span></p>
+                        <p class="copyright-text mb-0 ">Limbic Technology. All Rights Reserved<br> <span style="color:blue">Designed by Limbictechnologies</span></p>
 
                     </div>
 
