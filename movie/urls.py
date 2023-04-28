@@ -15,5 +15,7 @@ urlpatterns=[
     path('carrier/<int:id>/',views.jobs),
     path('register/',views.register),
     path('web/',views.web),
+    path('description/',views.description),
+    path('description/<int:id>/',views.description),
  
 ]

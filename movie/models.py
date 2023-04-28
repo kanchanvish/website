@@ -25,3 +25,12 @@ class Carrers(models.Model):
     Requirements = models.CharField(max_length=400)  
     image_path = models.CharField(max_length=100)
 
+class portfolio(models.Model):
+    title = models.CharField(max_length=100)
+    image_path1 = models.CharField(max_length=300)
+    image_path2 = models.CharField(max_length=300)
+    image_path3 = models.CharField(max_length=300)
+    image_path4 = models.CharField(max_length=300)
+    image_path5 = models.CharField(max_length=300)
+    des = models.TextField(max_length=1000)
+    

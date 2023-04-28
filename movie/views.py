@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Customer, Carrers
+from .models import Customer, Carrers, portfolio as Portfolio
 from django.core.mail import send_mail,EmailMessage
 from django.conf import settings
 
@@ -40,7 +40,12 @@ def service_details(request):
 #     return render(request,"movie/page_404.html")
 
 def gallary(request):
-    return render(request,"movie/gallary.html")
+    gallary_data = Portfolio.objects.all()
+    context = {
+        'gallary_data' : gallary_data
+    }
+    return render(request,"movie/gallary.html", context)
+
 
 def carrier(request):
     carrer_data = Carrers.objects.all()
@@ -76,12 +81,12 @@ def register(request):
         city = request.POST['city']
         zip = request.POST['zip']
         telephone = request.POST['tel']
-        date = request.POST['date']
+    
         # upload_your_CV = request.POST['file']
         upload_your_CV = request.FILES['myfile']
         # print(name, email, service_type)
         subject = 'Responce of user'
-        message = 'You responce is' + '\n' + 'name:'+' ' + name + '\n' +'email:'+' '+email + '\n' + 'address :' +' ' +address + '\n' + 'city :'+' '+ city + '\n' + 'zip :'+' '+ zip + '\n' + 'telephone :' +' '+ telephone + '\n' + 'date:'+' '+ date
+        message = 'You responce is' + '\n' + 'name:'+' ' + name + '\n' +'email:'+' '+email + '\n' + 'address :' +' ' +address + '\n' + 'city :'+' '+ city + '\n' + 'zip :'+' '+ zip + '\n' + 'telephone :' +' '+ telephone 
         email_from = settings.EMAIL_HOST_USER
         recipient_list = ['kanchanvishwakarma199@gmail.com',]
         mail = EmailMessage(subject, message, settings.EMAIL_HOST_USER, recipient_list)
@@ -98,3 +103,13 @@ def register(request):
 
 def web(request):
     return render(request,"movie/web.html")
+
+
+
+def description(request,id):
+    print(id)
+    portfolio = Portfolio.objects.get(id=id)
+    context = {
+        'portfolio' : portfolio
+    }
+    return render(request,"movie/description.html", context)

@@ -200,17 +200,7 @@ Free Bootstrap 5 HTML Template
                         <div class="services-image-wrap">
                             <img src="{% static 'movie/images/portfolio.jpg' %}" width="800px" height="600px" class="services-image img-fluid " alt=" ">
                             <img src="{% static 'movie/images/th.jpg' %}" width="800px" height="600px" class="services-image services-image-hover img-fluid " alt=" ">
-                            <!-- <div class="services-icon-wrap ">
-                                <div class="d-flex justify-content-between align-items-center ">
-                                    <p class="text-white mb-0 ">
-                                        <i class="bi-cash me-2 "></i> $820
-                                    </p>
 
-                                    <p class="text-white mb-0 ">
-                                        <i class="bi-clock-fill me-2 "></i> 5 hrs
-                                    </p>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
 
@@ -237,377 +227,28 @@ Free Bootstrap 5 HTML Template
 
 
         <section class="section-padding pt-0 ">
-            <div class="container ">
-                <div class="row ">
+            <div class="container">
+                <div class="row" style="display: flex;">
 
-                    <div class="col-lg-12 col-12 ">
-                        <h2 class="mb-4 ">Some Project's</h2>
+                    <div class="col-lg-12 col-12">
+                        <h2 class="mb-4">Some Project's</h2>
                     </div>
+                    {% for portfolio in gallary_data %}
+                    <div class="col-lg-4 col-md-4 col-12">
 
-                    <div class="col-lg-4 col-md-4 col-12 ">
-                        <a href="{% static 'movie/images/our.png' %} " class="image-popup ">
-                            <img src="{%static 'movie/images/1.png'%}" width="1000%" height="950px" class="gallery-image image ">
-                            <center> <a href="/index/"><b><h5 style="color: black;"> OurTestSeries</h5></b></a></center>
+                        <a href="/description/{{ portfolio.id }}/" class="image-popup ">
+                            <img src="{% static 'movie/images/' %}{{ portfolio.image_path1 }}" width="400px" height="400px" class="gallery-image image ">
+                            <a href="/description/"><b><h5 style="color: black;"> </h5></b></a>
+                            <center>
+                                <h3>{{ portfolio.title }}</h3>
+                            </center>
                         </a>
                     </div>
-
-
-                    <div class="col-lg-4 col-md-4 col-12 ">
-                        <a href="{% static 'movie/images/online.png' %}" class="image-popup ">
-
-                            <img src="{%static 'movie/images/2.jpg'%}" width="700px" height="900px" class="gallery-image image ">
-                            <center> <a href="/index/"><b><h5 style="color: black;"> Online Exam</h5></b></a></center>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-12 ">
-                        <a href="{% static 'movie/images/school.png' %}" class="image-popup ">
-
-                            <img src="{%static 'movie/images/4.jpg'%}" width="700px" height="1000px" class="gallery-image image ">
-                            <center> <a href="/index/"><b><h5 style="color: black;"> School</h5></b></a></center>
-                        </a>
-                    </div>
+                    {% endfor %}
 
                 </div>
             </div>
         </section>
-
-        <section class="section-padding pt-0 ">
-            <div class="container ">
-                <div class="row ">
-
-                    <!-- <div class="col-lg-12 col-12 ">
-                        <h2 class="mb-4 ">Photo gallery</h2>
-                    </div> -->
-
-                    <div class="col-lg-4 col-md-4 col-12 ">
-                        <a href="{% static 'movie/images/social.png' %}" class="image-popup ">
-                            <!-- <img src="{%static 'movie/images/two.png'%}"> -->
-                            <img src="{%static 'movie/images/Logo.png'%}" width="1000%" height="950px" class="gallery-image image ">
-
-
-
-                            <center> <a href="/index/"><b><h5 style="color: black;"> SocialLodder</h5></b></a></center>
-                        </a>
-                    </div>
-
-
-                    <div class="col-lg-4 col-md-4 col-12 ">
-                        <a href="{% static 'movie/images/bat.png' %}" class="image-popup ">
-
-
-                            <img src="{%static 'movie/images/3 (1).jpg' %}" width="700px" height="900px" class="gallery-image image ">
-                            <center> <a href="/index/"><b><h5 style="color: black;"> Bot</h5></b></a></center>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-12 ">
-                        <a href="{% static 'movie/images/buk.png' %}" class="image-popup ">
-
-                            <img src="{%static 'movie/images/th (1).jpg'%}" width="700px" height="1000px" class="gallery-image image ">
-                            <center> <a href="/index/"><b><h5 style="color: black;"> Bucksbin</h5></b></a></center>
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- 
-        <section class="section-padding section-bg ">
-            <div class="container ">
-                <div class="row ">
-
-                    <div class="col-lg-12 col-12 ">
-                        <h2 class="mb-4 ">PROJECTS</h2>
-                    </div>
-
-                    <div class="col-lg-6 col-12 ">
-                        <div class="services-thumb mb-lg-0 ">
-                            <div class="row ">
-                                <div class="col-lg-5 col-md-5 col-12 ">
-                                    <div class="services-image-wrap ">
-                                        <a href="services-detail.html ">
-                                            <img src="{% static 'movie/images/two.jpg' %}" class="services-image img-fluid " alt=" ">
-                                            <img src="{% static 'movie/images/three.jpg' %}" class="services-image services-image-hover img-fluid " alt=" ">
-
-                                            <div class="services-icon-wrap ">
-                                                <div class="d-flex justify-content-between align-items-center ">
-                                                    <p class="text-white mb-0 ">
-                                                        <i class="bi-cash me-2 "></i> $240
-                                                    </p>
-
-                                                    <p class="text-white mb-0 ">
-                                                        <i class="bi-clock-fill me-2 "></i> 2 hrs
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center ">
-                                    <div class="services-info mt-4 mt-lg-0 mt-md-0 ">
-                                        <h4 class="services-title mb-1 mb-lg-2 ">
-                                            <a class="services-title-link " href="/services_details/">Portfolio Website</a>
-                                        </h4>
-
-                                        <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
-
-                                        <div class="d-flex flex-wrap align-items-center ">
-                                            <div class="reviews-icons ">
-                                                <i class="bi-star-fill "></i>
-                                                <i class="bi-star-fill "></i>
-                                                <i class="bi-star-fill "></i>
-                                                <i class="bi-star-fill "></i>
-                                                <i class="bi-star-fill "></i>
-                                            </div>
-
-                                            <a href="/services_detail/" class="custom-btn btn button button--atlas mt-2 ms-auto ">
-                                                <span>Learn More</span>
-
-                                                <div class="marquee " aria-hidden="true ">
-                                                    <div class="marquee__inner ">
-                                                        <span>Learn More</span>
-                                                        <span>Learn More</span>
-                                                        <span>Learn More</span>
-                                                        <span>Learn More</span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-12 ">
-                        <div class="services-thumb mb-lg-0 ">
-                            <div class="row ">
-                                <div class="col-lg-5 col-md-5 col-12 ">
-                                    <div class="services-image-wrap ">
-                                        <a href="/services_details/">
-                                            <img src="{% static 'movie/images/3.jpg' %}" class="services-image img-fluid " alt=" ">
-                                            <img src="{%static 'movie/images/4.jpg' %} " class="services-image services-image-hover img-fluid " alt=" ">
-
-                                            <div class="services-icon-wrap ">
-                                                <div class="d-flex justify-content-between align-items-center ">
-                                                    <p class="text-white mb-0 ">
-                                                        <i class="bi-cash me-2 "></i> $6,800
-                                                    </p>
-
-                                                    <p class="text-white mb-0 ">
-                                                        <i class="bi-clock-fill me-2 "></i> 30 hrs
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center ">
-                                    <div class="services-info mt-4 mt-lg-0 mt-md-0 ">
-                                        <h4 class="services-title mb-1 mb-lg-2 ">
-                                            <a class="services-title-link " href="/services_details/">School Website</a>
-                                        </h4>
-
-                                        <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
-
-                                        <div class="d-flex flex-wrap align-items-center ">
-                                            <div class="reviews-icons ">
-                                                <i class="bi-star-fill "></i>
-                                                <i class="bi-star-fill "></i>
-                                                <i class="bi-star-fill "></i>
-                                                <i class="bi-star-fill "></i>
-                                                <i class="bi-star "></i>
-                                            </div>
-
-                                            <a href="/services_details/" class="custom-btn btn button button--atlas mt-2 ms-auto ">
-                                                <span>Learn More</span>
-
-                                                <div class="marquee " aria-hidden="true ">
-                                                    <div class="marquee__inner ">
-                                                        <span>Learn More</span>
-                                                        <span>Learn More</span>
-                                                        <span>Learn More</span>
-                                                        <span>Learn More</span>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <section class="section-padding section-bg ">
-                <div class="container ">
-                    <div class="row ">
-    
-                    <div class="col-lg-12 col-12 ">
-                            <h2 class="mb-4 ">Related Services</h2>
-                        </div> -->
-
-        <!-- <div class="col-lg-6 col-12 ">
-                            <div class="services-thumb mb-lg-0 ">
-                                <div class="row ">
-                                    <div class="col-lg-5 col-md-5 col-12 ">
-                                        <div class="services-image-wrap ">
-                                            <a href="services-detail.html ">
-                                                <img src="{% static 'movie/images/two.jpg' %}" class="services-image img-fluid " alt=" ">
-                                                <img src="{% static 'movie/images/three.jpg' %}" class="services-image services-image-hover img-fluid " alt=" ">
-    
-                                                <div class="services-icon-wrap ">
-                                                    <div class="d-flex justify-content-between align-items-center ">
-                                                        <p class="text-white mb-0 ">
-                                                            <i class="bi-cash me-2 "></i> $240
-                                                        </p>
-    
-                                                        <p class="text-white mb-0 ">
-                                                            <i class="bi-clock-fill me-2 "></i> 2 hrs
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-    
-                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center ">
-                                        <div class="services-info mt-4 mt-lg-0 mt-md-0 ">
-                                            <h4 class="services-title mb-1 mb-lg-2 ">
-                                                <a class="services-title-link " href="/services_details/">Portfolio Website</a>
-                                            </h4>
-    
-                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
-    
-                                            <div class="d-flex flex-wrap align-items-center ">
-                                                <div class="reviews-icons ">
-                                                    <i class="bi-star-fill "></i>
-                                                    <i class="bi-star-fill "></i>
-                                                    <i class="bi-star-fill "></i>
-                                                    <i class="bi-star-fill "></i>
-                                                    <i class="bi-star-fill "></i>
-                                                </div>
-    
-                                                <a href="/services_detail/" class="custom-btn btn button button--atlas mt-2 ms-auto ">
-                                                    <span>Learn More</span>
-    
-                                                    <div class="marquee " aria-hidden="true ">
-                                                        <div class="marquee__inner ">
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="col-lg-6 col-12 ">
-                            <div class="services-thumb mb-lg-0 ">
-                                <div class="row ">
-                                    <div class="col-lg-5 col-md-5 col-12 ">
-                                        <div class="services-image-wrap ">
-                                            <a href="/services_details/">
-                                                <img src="{% static 'movie/images/3.jpg' %}" class="services-image img-fluid " alt=" ">
-                                                <img src="{%static 'movie/images/4.jpg' %} " class="services-image services-image-hover img-fluid " alt=" ">
-    
-                                                <div class="services-icon-wrap ">
-                                                    <div class="d-flex justify-content-between align-items-center ">
-                                                        <p class="text-white mb-0 ">
-                                                            <i class="bi-cash me-2 "></i> $6,800
-                                                        </p>
-    
-                                                        <p class="text-white mb-0 ">
-                                                            <i class="bi-clock-fill me-2 "></i> 30 hrs
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-    
-                                    <div class="col-lg-7 col-md-7 col-12 d-flex align-items-center ">
-                                        <div class="services-info mt-4 mt-lg-0 mt-md-0 ">
-                                            <h4 class="services-title mb-1 mb-lg-2 ">
-                                                <a class="services-title-link " href="/services_details/">School Website</a>
-                                            </h4>
-    
-                                            <p>Best Cleaning Service Provider Ipsum dolor sit consectetur kengan</p>
-    
-                                            <div class="d-flex flex-wrap align-items-center ">
-                                                <div class="reviews-icons ">
-                                                    <i class="bi-star-fill "></i>
-                                                    <i class="bi-star-fill "></i>
-                                                    <i class="bi-star-fill "></i>
-                                                    <i class="bi-star-fill "></i>
-                                                    <i class="bi-star "></i>
-                                                </div>
-    
-                                                <a href="/services_details/" class="custom-btn btn button button--atlas mt-2 ms-auto ">
-                                                    <span>Learn More</span>
-    
-                                                    <div class="marquee " aria-hidden="true ">
-                                                        <div class="marquee__inner ">
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                            <span>Learn More</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                    </div>
-                </div>
-    
-        </section>
-
-
-        <section class="partners-section ">
-            <div class="container ">
-                <div class="row justify-content-center align-items-center ">
-
-                    <div class="col-lg-12 col-12 ">
-                        <h4 class="partners-section-title bg-white shadow-lg ">Trusted by companies</h4>
-                    </div>
-
-                    <div class="col-lg-2 col-md-4 col-6 ">
-                        <img src="{% static 'movie/images/partners/glorix.svg' %}" class="partners-image img-fluid ">
-                    </div>
-
-                    <div class="col-lg-2 col-md-4 col-6 ">
-                        <img src="{% static 'movie/images/partners/rolf-leasing.svg' %} " class="partners-image img-fluid ">
-                    </div>
-
-                    <div class="col-lg-2 col-md-4 col-6 ">
-                        <img src="{% static  'movie/images/partners/woocommerce.svg' %}" class="partners-image img-fluid ">
-                    </div>
-
-                    <div class="col-lg-2 col-md-4 col-6 ">
-                        <img src="{% static 'movie/images/partners/toprak-leasing.svg' %} " class="partners-image img-fluid ">
-                    </div>
-
-                    <div class="col-lg-2 col-md-4 col-6 ">
-                        <img src="{% static 'movie/images/partners/unilabs.svg' %} " class="partners-image img-fluid ">
-                    </div>
-
-                </div>
-            </div>
-        </section> 
-    </main>  -->
         <footer class="site-footer ">
             <div class="container ">
                 <div class="row ">
@@ -618,13 +259,13 @@ Free Bootstrap 5 HTML Template
                         </div>
 
                         <ul class="footer-menu d-flex flex-wrap ms-5 ">
-                            <li class="footer-menu-item "><a href="# " class="footer-menu-link ">About Us</a></li>
+                            <li class="footer-menu-item "><a href="/about/" class="footer-menu-link ">About Us</a></li>
 
-                            <li class="footer-menu-item "><a href="# " class="footer-menu-link ">Blog</a></li>
+                            <li class="footer-menu-item "><a href="/carrier/" class="footer-menu-link ">Blog</a></li>
 
-                            <li class="footer-menu-item "><a href="# " class="footer-menu-link ">Reviews</a></li>
+                            <li class="footer-menu-item "><a href="/index/" class="footer-menu-link ">Reviews</a></li>
 
-                            <li class="footer-menu-item "><a href="# " class="footer-menu-link ">Contact</a></li>
+                            <li class="footer-menu-item "><a href="/contact/" class="footer-menu-link ">Contact</a></li>
                         </ul>
                     </div>
 
